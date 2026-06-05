@@ -1,8 +1,8 @@
-FROM eclipse-temurin:25-jdk-ubi10-minimal
+FROM eclipse-temurin:25-jdk
 
 WORKDIR /app
 COPY . .
 
-RUN chmod +x mvnw && ./mvnw clean package -DskipTests
+RUN chmod +x gradlew && ./gradlew clean build -x test
 
-CMD ["sh", "-c", "java -jar target/*.jar"]
+CMD ["sh", "-c", "java -jar build/libs/*.jar"]
