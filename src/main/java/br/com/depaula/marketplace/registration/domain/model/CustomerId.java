@@ -1,4 +1,4 @@
-package br.com.depaula.marketplace.registration.domain;
+package br.com.depaula.marketplace.registration.domain.model;
 
 import org.springframework.util.Assert;
 
