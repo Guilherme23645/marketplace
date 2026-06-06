@@ -1,4 +1,4 @@
-package br.com.depaula.marketplace.registration.infrastructure;
+package br.com.depaula.marketplace.registration.infrastructure.http;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
